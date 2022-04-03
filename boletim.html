@@ -20,7 +20,7 @@
 
     <main>
 
-        <table>
+        <table class="tabela-alunos">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -97,9 +97,35 @@
                 </tr>
         </table>
 
+        <div>
+            <h2>Adiciona Aluno</h2>
+        </div>
+
+        <form class="formulario">
+
+            <div class="a">
+                <label>Nome: <input class="nome1" name="nome" type="text"></label>
+            </div>
+            <div class="a">
+                <label>Primeiro Semestre: <input class="c primeiro" name="primeiro" type="number"></label>
+            </div>
+            <div class="a">
+                <label>Segundo Semestre: <input class="c segundo" name="segundo" type="number"></label>
+            </div>
+            <div class="a">
+                <label>Terceiro Semestre: <input class="c terceiro" name="terceiro" type="number"></label>
+            </div>
+    
+            <div>
+                <label><input class="adicionar-aluno" type="submit" value="Adicionar"></label>
+            </div>
+
+        </form>
+
     </main>
 
     <script src="soma.js"></script>
+    <script src="formulario.js"></script>
     
     
 </body>

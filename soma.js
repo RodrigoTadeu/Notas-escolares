@@ -7,9 +7,27 @@ for(i = 0; i < alunos.length; i++) {
     var segundo = parseInt(aluno.querySelector(".segundo").textContent)
     var terceiro = parseInt(aluno.querySelector(".terceiro").textContent)
 
-    var soma = (primeiro+segundo+terceiro)
+    var soma = somaNota(primeiro, segundo, terceiro)
 
     aluno.querySelector(".soma").textContent = soma
+
+    aprovação()
+    
+
+   
+
+
+
+
+
+function somaNota(nota1, nota2 , nota3) {
+       
+    var nota = nota1 + nota2 + nota3
+
+    return nota
+ }
+
+ function aprovação() {
 
     var situação = aluno.querySelector(".situação")    
     
@@ -29,7 +47,9 @@ for(i = 0; i < alunos.length; i++) {
         aluno.classList.add ("reprovou")
         
 
-        
-    }}
+        return situação
+    }}}
 
-    
+
+
+
